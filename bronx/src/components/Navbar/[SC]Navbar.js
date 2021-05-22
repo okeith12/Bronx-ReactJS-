@@ -59,36 +59,14 @@ flex-direction: column;
 justify-content: space-around;
 width: 2rem;
 height: 2rem;
-background: red;
+background-color: red;
 border: 2px;
 cursor: pointer;
 padding: 0;
 z-index: 10;
 
-&:hover{
-    color: var(--primary-color);
+:hover{
+    background-color: var(--primary-color);
 }
 
-&{
-    content: "";
-    width:55px;
-    height: 0.25rem;
-    background: var(--light-color);
-    border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
-    transform: translateY(-15px);
-}
-&:after{
-    content: "";
-    width: 35px;
-    height: 0.25rem;
-    background: var(--light-color);
-    border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
-    transform: translateY(15px);
-}
 `;
