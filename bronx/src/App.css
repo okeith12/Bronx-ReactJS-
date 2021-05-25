@@ -9,14 +9,16 @@
   --accent-color: #39383F;
   /* Typography */
   --body-font: 'Lora', serif;
-  --xl-font-size: 2.5rem;
-  --lg-font-size: 1.75rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1.125rem;
+  --logo-font-size: 2.5rem;
+  --paw-size: 38px;
+  --lg-font-size: 6rem;
+  --h1-font-size: 3.5rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.5rem;
   --normal-font-size: 1rem;
-  --sm-font-size: 0.8rem;
-  --es-font-size: 0.75rem;
+  --sm-font-size: 0.9rem;
+  --es-font-size: 0.8rem;
+ 
    /* Margin */
    --mb-1: 0.5rem;
    --mb-2: 1rem;
@@ -29,8 +31,32 @@
 
 
 
- 
-
+@media screen and (max-width: 768px) {
+  :root {
+    --logo-font-size: 2rem;
+    --lg-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --sm-font-size: 0.8rem;
+    --es-font-size: 0.75rem;
+    --paw-size: 32px;
+  }
+}
+@media screen and (max-width: 450px) {
+  :root {
+    --logo-font-size: 1.75rem;
+    --lg-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --sm-font-size: 0.8rem;
+    --es-font-size: 0.75rem;
+    --paw-size: 28px;
+  }
+}
 *,*::after,*::before{
   box-sizing: border-box;
   margin: 0;

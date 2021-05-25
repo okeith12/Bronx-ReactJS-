@@ -4,14 +4,16 @@ import { IoPawSharp } from 'react-icons/io5';
 
 export const Nav = styled.nav`
 background: transparent;
-height: 80px;
+min-height: 80px;
 display: flex;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
-font-size: 1rem;
-position: sticky;
+position: fixed;
+transition: background 250ms ease-in;
 top:0;
-z-index: 10;
+left: 0;
+right: 0;
+z-index: 999;
 
 @media screen and (max-width:960px){
     transition: 0.5s all ease;
@@ -30,7 +32,7 @@ export const NavLogo = styled(LinkR)`
     color: var(--light-color);
     justify-self: flex-start;
     cursor:pointer;
-    font-size: var(--xl-font-size);
+    font-size: var(--logo-font-size);
     display: flex;
     align-items: center;
     margin-left: 24px;
@@ -46,8 +48,8 @@ export const NavLogo = styled(LinkR)`
     }
 `;
 export const Paw = styled(IoPawSharp)`
-    height: 40px;
-    width: 40px;
+    height: var(--paw-size);
+    width: var(--paw-size);
     margin-right: var(--mb-1);
     padding-bottom: 3px;
 `;
@@ -85,7 +87,7 @@ div{
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
-    transform: ${({isOpen}) => (isOpen ? 'rotate(45deg)':'rotate(0)')};
+    transform: ${({isOpen}) => (isOpen ? 'rotate(48deg)':'rotate(0)')};
 
 
 }
@@ -103,12 +105,12 @@ display: flex;
 align-items: center;
 list-style: none;
 text-align: center;
-margin-right:${({isOpen}) => (isOpen ? '10%':'-10%')};
+margin-right:${({isOpen}) => (isOpen ? '10%':'5%')};
 background-color: var(--accent-color); //transparent if want to use backdrop
 margin-top: var(--mb-3);
 width: 100%;
 max-width: 400px;
-border-radius: 25px;
+border-radius: 20px;
 height: 45px;
 transition: 0.2s ease-in-out;
 box-shadow: 0 3px 5px rgba(0,0,0,0.2);
@@ -141,7 +143,7 @@ export const NavLink = styled(LinkR)`
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
-    font-size: var(--lg-font-size);
+    font-size: var(--h2-font-size);
     height: 100%;
     cursor: pointer;
     margin-right: var(--mb-6);

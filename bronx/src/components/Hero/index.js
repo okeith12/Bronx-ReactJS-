@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
+
+import {HeroContainer,HeroTitle,ScrollDownBtn,ColoredWord} from "./[SC]Hero";
 
 const Hero = () => {
+
     return (
         <HeroContainer>
-            <HeroBg>
-                <ImgBg src={} alt='The Life of Bronx'>;
-
-                </ImgBg>
-            </HeroBg>
+            <HeroTitle>The Life of <ColoredWord>Bronx</ColoredWord></HeroTitle>
+            <ScrollDownBtn>Scroll Down</ScrollDownBtn>
         </HeroContainer>
     )
 }
