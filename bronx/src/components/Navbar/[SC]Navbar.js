@@ -128,6 +128,10 @@ opacity: ${({isOpen}) => (isOpen ? '100%':'0%')};
     border-radius: 20px;
     
 }
+@media screen and (max-width:350px){
+    margin-top: ${({isOpen}) => (isOpen ? '5rem':'0')};
+    height: 160px;
+}
 `
 export const NavItem = styled.li`
 

@@ -40,6 +40,7 @@ width: 45%;
 @media screen and (max-width: 500px){
     width:90%;
 }
+
 `
 export const Col2 = styled.div`
 
@@ -68,9 +69,13 @@ margin-top: 10px;
 }
 @media screen and (max-width: 500px){
     width:90%;
+    margin: auto;
     margin-top: -100px;
 }
-
+@media screen and (max-width: 374px) {
+    height: 300px;
+    margin-top: -160px;
+  }
 `
 export const TextWrapper = styled.div`
 max-width: 100%;
@@ -85,6 +90,11 @@ line-height: 16px;
 letter-spacing: 1.4px;
 text-transform: uppercase;
 margin-bottom: var(--mb-4);
+
+
+@media screen and (max-width: 350px) {
+    margin-bottom: var(--mb-1);
+  }
 `
 export const Desc = styled.p`
 justify-content: center;
@@ -93,6 +103,10 @@ align-items: center;
 font-family: 'Lora', serif;
 font-size: var(--h3-font-size);
 padding: 20px;
+@media screen and (max-width: 350px) {
+    margin-top: var(--mb-1);
+    font-size: .7rem;
+  }
 `
 export const BtnWrap = styled.div`
 display: flex;
