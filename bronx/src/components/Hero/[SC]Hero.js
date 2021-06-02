@@ -10,10 +10,12 @@ justify-content: center;
 align-items: center;
 box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
 object-fit: contain;
-
-
-
 `
+export const SliderImg = styled.img`
+height: 100vh;
+z-index: 500;
+`
+
 export const HeroTitle = styled.h1`
 color: var(--light-color);
 font-size: var(--lg-font-size);
@@ -27,19 +29,19 @@ color: var(--primary-color);`
 
 export const ScrollDownBtn = styled(LinkS)`
     color: var(--light-color);
-    font-size: 32px;
+    font-size: var(--h3-font-size);
     background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: absolute;
-    bottom: 5px;
+    bottom: 25px;
     line-height: 20px;
     cursor: pointer;
 
 
-    
+
 
     &:hover{
         color: var(--primary-color);
@@ -47,10 +49,5 @@ export const ScrollDownBtn = styled(LinkS)`
     }
 
 
-    @media screen and (max-width: 960px){
-        font-size: 70px;
-    }
-    @media screen and (max-width: 768px){
-        font-size: 40px;
-    }
+ 
 `

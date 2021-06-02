@@ -14,7 +14,7 @@
   --lg-font-size: 6rem;
   --h1-font-size: 3.5rem;
   --h2-font-size: 1.75rem;
-  --h3-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
   --normal-font-size: 1rem;
   --sm-font-size: 0.9rem;
   --es-font-size: 0.8rem;
@@ -34,10 +34,10 @@
 @media screen and (max-width: 768px) {
   :root {
     --logo-font-size: 2rem;
-    --lg-font-size: 1.75rem;
+    --lg-font-size: 4rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
-    --h3-font-size: 1.125rem;
+    --h3-font-size: 1rem;
     --normal-font-size: 1rem;
     --sm-font-size: 0.8rem;
     --es-font-size: 0.75rem;
@@ -47,13 +47,10 @@
 @media screen and (max-width: 450px) {
   :root {
     --logo-font-size: 1.75rem;
-    --lg-font-size: 1.75rem;
+    --lg-font-size: 2.75rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
-    --h3-font-size: 1.125rem;
-    --normal-font-size: 1rem;
-    --sm-font-size: 0.8rem;
-    --es-font-size: 0.75rem;
+    --h3-font-size: .9rem;
     --paw-size: 28px;
   }
 }
@@ -65,4 +62,13 @@
 }
 body{
   background-color:var(--bg-color);
+  background: url('../src/images/bluebonnet.jpg') no-repeat center center fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  
 }
