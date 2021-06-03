@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {Link as LinkR} from 'react-router-dom';
-import {BiArrowFromLeft } from "react-icons/bi";
+import {IoArrowForwardSharp } from "react-icons/io5";
 
 export const SummaryContainer= styled.div`
 color: #fff;
@@ -10,6 +10,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 width: 100%;
+margin-bottom: 3vmax;
 @media screen and (max-width: 768px){
     margin-top: 8vmax;
 }
@@ -27,7 +28,7 @@ max-width: 1200px;
 @media screen and (max-width: 768px){
     flex-direction: column;
     width: 100%;
-    margin: 0 20px;
+
 }
 `
 export const Col1 = styled.div`
@@ -44,7 +45,8 @@ width: 45%;
 `
 export const Col2 = styled.div`
 
-background-color: var(--accent-color);
+background: var(--accent-color);
+box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 width: 40%;
 height: 700px;
 z-index: 1;
@@ -140,7 +142,7 @@ margin-top: var(--mb-2);
 
 
 `
-export const ArrowRight = styled(BiArrowFromLeft)`
+export const ArrowRight = styled(IoArrowForwardSharp)`
 color: var(--primary-color);
 margin-left: var(--mb-1);
 

@@ -6,6 +6,8 @@
   --primary-color: #825E47;
   --secondary-color: #A9E7FE;
   --bg-color:  #DEDDE1;
+  --accent-color-grad: linear-gradient(90deg, rgba(57,56,63,1) 0%, rgba(54,52,60,1) 25%, rgba(41,41,48,1) 50%, rgba(36,38,43,1) 75%, rgba(35,36,42,1) 100%);
+  /* #39383F; //#1e1f26 will be gradient these two  */
   --accent-color: #39383F;
   /* Typography */
   --body-font: 'Lora', serif;

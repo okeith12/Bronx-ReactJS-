@@ -106,7 +106,7 @@ align-items: center;
 list-style: none;
 text-align: center;
 margin-right:${({isOpen}) => (isOpen ? '10%':'5%')};
-background-color: var(--accent-color); //transparent if want to use backdrop
+background: var(--accent-color-grad); //transparent if want to use backdrop
 margin-top: var(--mb-3);
 width: 100%;
 max-width: 400px;
