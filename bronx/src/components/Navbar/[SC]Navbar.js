@@ -8,7 +8,7 @@ min-height: 80px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-position: fixed;
+position: relative;
 transition: background 250ms ease-in;
 top:0;
 left: 0;

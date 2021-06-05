@@ -13,6 +13,7 @@ width: 100%;
 margin-bottom: 3vmax;
 @media screen and (max-width: 768px){
     margin-top: 8vmax;
+    margin-bottom: 5vmax;
 }
 `
 export const SummaryWrapper = styled.div`
@@ -27,7 +28,7 @@ max-width: 1200px;
 
 @media screen and (max-width: 768px){
     flex-direction: column;
-    width: 100%;
+    width: 90%;
 
 }
 `

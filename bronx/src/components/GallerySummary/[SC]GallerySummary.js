@@ -33,9 +33,10 @@ height:600px;
 width:100%;
 padding:20px;
 }
-&:hover>*{
-    opacity:.2;
-}
+
+
+
+
 
 `
 export const Overlay = styled.div`
@@ -55,8 +56,36 @@ export const GalCol1 = styled.div`
     margin-top: -20px;
     margin-right: -950px;
 transform: rotate(-2deg);
-}
 
+}
+@media screen and (max-width: 768px){
+    &>*{
+        height: 350px;
+        margin-right: -650px;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 500px){
+    &>*{
+        height: 225px;
+        margin-right: -375px;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 400px){
+    &>*{
+        height: 200px;
+        margin-right: -327px;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 350px){
+    &>*{
+        height: 175px;
+        margin-right: -290px;
+        margin-top: 200px;
+    }
+}
 `
 export const GalCol2 = styled.div`
 &>*{
@@ -73,6 +102,32 @@ export const GalCol2 = styled.div`
     transition: .5s ease;
 
  }
+ @media screen and (max-width: 768px){
+    &>*{
+        height: 350px;
+        margin-top: 300px;
+        margin-left: 500px;
+    }
+}
+@media screen and (max-width: 500px){
+    &>*{
+        height: 225px;
+        margin-top: 250px;
+        margin-left: 250px;
+    }
+}
+@media screen and (max-width: 400px){
+    &>*{
+        height: 200px;
+    }
+}
+@media screen and (max-width: 350px){
+    &>*{
+        height: 175px;
+        margin-top: 325px;
+        margin-left: 200px;
+    }
+}
 `
 export const GalCol3 = styled.div`&>*{
     height: 400px;
@@ -86,7 +141,25 @@ export const GalCol3 = styled.div`&>*{
     opacity:.8; 
     transition: .5s ease;
  }
-
+ @media screen and (max-width: 768px){
+    &>*{
+        height: 350px;
+    }
+}
+@media screen and (max-width: 500px){
+    &>*{
+        height: 225px;
+        margin-right: -100px;
+        margin-top: 200px;
+    }
+}
+@media screen and (max-width: 350px){
+    &>*{
+        height: 175px;
+        margin-right: -50px;
+        margin-top: 325px;
+    }
+}
 `
 export const GalCol4 = styled.div`&>*{
     height: 400px;
@@ -103,6 +176,27 @@ export const GalCol4 = styled.div`&>*{
     opacity:1; 
     transition: .5s ease;
  }
+ @media screen and (max-width: 768px){
+    &>*{
+        height: 350px;
+        margin-top: 70px;
+        margin-right:550px;
+    }
+    
+}
+@media screen and (max-width: 500px){
+    &>*{
+        height: 175px;
+        margin-right:325px;
+    }
+}
+@media screen and (max-width: 350px){
+    &>*{
+        height: 150px;
+        margin-right:310px;
+        margin-top: 205px;
+    }
+}
 `
 
 
