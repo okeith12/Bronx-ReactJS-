@@ -72,6 +72,9 @@
   padding: 0;
   font-family: 'Bebas Neue', cursive;
 }
+html{
+  height:100%;
+}
 body{
   background-color:var(--bg-color);
   background: url('../src/images/bluebonnet.jpg') no-repeat center center fixed;

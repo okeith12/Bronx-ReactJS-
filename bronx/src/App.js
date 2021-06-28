@@ -1,12 +1,19 @@
 
 import './App.css';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Home from './pages';
+import Gallery1 from './pages/gallery';
+import About from './pages/about';
+
 
 function App() {
   return (
     <Router> 
-      <Home/>
+      <Switch>
+        <Route path="/" component={Home} exact/>
+        <Route path="/about" component={About} exact/>
+        <Route path="/gallery" component={Gallery1} exact/>
+      </Switch>
     </Router>
   );
 }

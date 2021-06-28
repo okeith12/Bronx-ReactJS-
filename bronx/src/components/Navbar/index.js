@@ -1,9 +1,12 @@
 //NAVBAR 
-import React from 'react';
+import React, {useState} from 'react';
 import {bool, func} from 'prop-types';
 import {Nav,Container,NavLogo,Paw,Hamburger,NavMenu,NavItem,NavLink} from './[SC]Navbar';
 
-export const Navbar = ({isOpen, toggle}) => {
+export const Navbar = () => {
+    
+    const[isOpen,setOpen] = useState(false);
+    const toggle = () =>{setOpen(!isOpen);};
 
     return (
         <>

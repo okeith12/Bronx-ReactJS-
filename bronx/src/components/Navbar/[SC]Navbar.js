@@ -15,6 +15,7 @@ left: 0;
 right: 0;
 z-index: 999;
 
+
 @media screen and (max-width:960px){
     transition: 0.5s all ease;
 }
@@ -105,7 +106,7 @@ display: flex;
 align-items: center;
 list-style: none;
 text-align: center;
-margin-right:${({isOpen}) => (isOpen ? '10%':'5%')};
+margin-right:${({isOpen}) => (isOpen ? '15%':'5%')};
 background: var(--accent-color-grad); //transparent if want to use backdrop
 margin-top: var(--mb-3);
 width: 100%;
@@ -122,7 +123,7 @@ opacity: ${({isOpen}) => (isOpen ? '100%':'0%')};
 @media screen and (max-width:768px){
     display: grid;
     max-width: 180px;
-    margin-right: 0;
+    margin-right: 5%;
     margin-top: ${({isOpen}) => (isOpen ? '6rem':'0')};
     height: 180px;
     border-radius: 20px;
