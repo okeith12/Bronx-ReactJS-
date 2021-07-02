@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom';
 import { NavLogo } from '../Navbar/[SC]Navbar';
+
+
 export const FooterContainer = styled.footer`
 min-height:20vh;
 margin-top:auto;
