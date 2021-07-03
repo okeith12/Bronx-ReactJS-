@@ -1,4 +1,5 @@
 import React from 'react'
+import AnniversaryVideo from '../components/AnniversaryVideo'
 import Footer from '../components/Footer'
 import { Navbar } from '../components/Navbar'
 import StorySection from '../components/StorySection'
@@ -9,6 +10,7 @@ const About = () => {
     <>
     <Navbar/>
      <StorySection {...storySectionOne}/>
+     <AnniversaryVideo/>
      <Footer/>
      </>
     )

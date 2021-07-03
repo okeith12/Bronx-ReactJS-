@@ -135,7 +135,6 @@ opacity: ${({isOpen}) => (isOpen ? '100%':'0%')};
 }
 `
 export const NavItem = styled.li`
-
 text-align:center;
 height: 80px;
 

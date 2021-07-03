@@ -1,7 +1,10 @@
-import React from 'react'
+import React, {useLayoutEffect} from 'react'
 import {FooterContainer,FooterMenu,FooterItem,FooterLink,FooterCopy,FootLogo,WebLink} from './[SC]Footer'
 import {Paw} from '../Navbar/[SC]Navbar'
 const Footer = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
     return (
         <>
           <FooterContainer>
