@@ -1,4 +1,5 @@
-import React, {useLayoutEffect} from 'react'
+import React from 'react'
+import AnniversaryVideo from '../components/AnniversaryVideo';
 import Footer from '../components/Footer';
 import GallerySummary from '../components/GallerySummary';
 import Hero from '../components/Hero';
@@ -17,6 +18,7 @@ const Home = () => {
         <Hero/>
         <Summary/>
         <GallerySummary/>
+        <AnniversaryVideo/>
         <Quote/>
         <Footer/>
         </>

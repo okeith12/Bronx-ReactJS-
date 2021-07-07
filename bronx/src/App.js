@@ -8,7 +8,7 @@ import About from './pages/about';
 
 function App() {
   return (
-    <Router onUpdate={() => window.scrollTo(0, 0)}> 
+    <Router> 
       <Switch>
         <Route path="/" component={Home} exact/>
         <Route path="/about" component={About} exact/>

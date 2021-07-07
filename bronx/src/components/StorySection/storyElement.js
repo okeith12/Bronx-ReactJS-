@@ -1,7 +1,27 @@
 import styled from 'styled-components';
+import hero01 from '../../images/hero_01.jpg';
+import  { storySectionOne, storySectionThree } from './Data';
+
 
 export const StoryContainer = styled.div`
-background:${({picBg}) => (picBg ? '#f9f9f9' : 'transparent')};
+margin-top:${({isFirst}) => (isFirst ? '-80px' : '0')};
+${({picBg}) => {
+    if(picBg && storySectionOne.story !== 3){
+        return `
+        background: url(${storySectionOne.bgImg2}) center center/cover no-repeat;
+        `
+    }
+    else if(picBg && storySectionThree.story === 3){
+        return`
+        background: url(${storySectionThree.bgImg2}) center center/cover no-repeat;
+        `
+    }
+    else{
+        return`
+        background: transparent;
+        `
+    }
+}}
 
 @media screen and (max-width: 768px){
     padding: 7rem 0 2rem;
@@ -9,10 +29,11 @@ background:${({picBg}) => (picBg ? '#f9f9f9' : 'transparent')};
 
 `
 
+
 export const StoryWrapper = styled.div`
 display:grid;
 z-index: 1;
-height:80vh;
+height:100vh;
 width: 100%;
 max-width:1100px;
 margin-right: auto;
@@ -21,7 +42,7 @@ padding: 0 24px;
 justify-content:center;
 `
 export const StoryGrid = styled.div`
-    display:${({hasImg}) => (hasImg ? 'grid' : 'flex')};
+    display:grid;
     grid-auto-columns: minmax(auto,1fr);
     align-items:center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'img cont'` : `'cont img'`)};
@@ -61,7 +82,7 @@ color:${({darkDesc}) => (darkDesc ? 'var(--light-color)' : 'black')};
 
 `
 export const StoryImg= styled.div`
-// display:${({hasImg}) => (hasImg ? 'none' : 'inline')};
+display:${({hasImg}) => (hasImg ? 'inline' : 'none')};
 grid-area:img;
 margin-bottom: 15px;
 padding: 0 15px;

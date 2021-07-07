@@ -2,10 +2,11 @@ import React from 'react'
 import {StoryContainer,TextWrapper,StoryImage,StoryImgOverlay,StoryWrapper,StoryImg,StoryGrid,StoryData,StoryTitle,StoryDesc} from "./storyElement";
 
 
-const StorySection = ({hasImg,bgImg,id,picBg,imgStart,storyTitle,storyDesc,darkTitle,darkDesc}) => {
+
+const StorySection = ({hasImg,bgImg,isFirst,id,picBg,imgStart,storyTitle,storyDesc,darkTitle,darkDesc}) => {
     return (
         <>
-            <StoryContainer id={id} picBg={picBg}>
+            <StoryContainer isFirst={isFirst} id={id} picBg={picBg} bgImg={bgImg}>
                 <StoryWrapper >
                     <StoryGrid imgStart={imgStart} hasImg={hasImg}>
                         <StoryData>
