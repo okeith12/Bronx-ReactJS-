@@ -12,6 +12,7 @@ background: radial-gradient(circle, rgba(57,56,63,1) 0%, rgba(57,56,63,1) 52%, r
 margin-top: 10vh;
 margin: 0 auto;
 flex-direction: column;
+overflow:hidden;
 
 `
 export const GalImgWrap = styled.div`
@@ -170,13 +171,16 @@ export const GalCol3 = styled.div`&>*{
     }
 }
 `
-export const GalCol4 = styled.div`&>*{
+export const GalCol4 = styled.div`
+
+&>*{
     filter: brightness(70%);
     height: 400px;
     margin: auto;
     margin-top: 20px;
     margin-right: 800px;
     transform: rotate(10deg);
+    max-width:1000px;
 }
 &:hover>* {
     filter: brightness(100%);

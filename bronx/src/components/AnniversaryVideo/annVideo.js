@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 
 export const VideoSection = styled.section`
+border: 34px;
 margin-top: 10vh;
     height:100vh;
   padding: 4.5rem 0 2.5rem;
