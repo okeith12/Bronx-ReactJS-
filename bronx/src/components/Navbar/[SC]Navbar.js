@@ -113,6 +113,7 @@ width: 100%;
 max-width: 400px;
 border-radius: 20px;
 height: 45px;
+pointer-events:${({isOpen}) => (isOpen ? 'auto':'none')};
 transition: 0.2s ease-in-out;
 box-shadow: 0 3px 5px rgba(0,0,0,0.2);
 // backdrop-filter: blur(10px);

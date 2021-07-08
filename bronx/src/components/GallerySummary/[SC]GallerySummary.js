@@ -9,9 +9,10 @@ display: flex;
 align-items: center;
 justify-content: center;
 background: radial-gradient(circle, rgba(57,56,63,1) 0%, rgba(57,56,63,1) 52%, rgba(30,31,38,1) 83%);
-margin-top: 6vmax;
+margin-top: 10vh;
 margin: 0 auto;
 flex-direction: column;
+
 `
 export const GalImgWrap = styled.div`
 width: 90%;
@@ -51,12 +52,18 @@ text-align: center;
 `
 export const GalCol1 = styled.div`
 &>*{
+    filter: brightness(70%);
     height: 400px;
     margin: auto;
     margin-top: -20px;
     margin-right: -950px;
 transform: rotate(-2deg);
 
+}
+&:hover>*{
+    opacity:.8; 
+    transform: scale(1.1);
+    transition: .5s ease;
 }
 @media screen and (max-width: 768px){
     &>*{
@@ -89,6 +96,7 @@ transform: rotate(-2deg);
 `
 export const GalCol2 = styled.div`
 &>*{
+    filter: brightness(70%);
     height: 400px;
     margin: auto;
     margin-top: 225px;
@@ -97,10 +105,9 @@ export const GalCol2 = styled.div`
     
 }
 &:hover>*{
-    opacity:.8; 
-    transform: scale(1);
+    filter: brightness(100%);
+    transform:scale(1.1);
     transition: .5s ease;
-
  }
  @media screen and (max-width: 768px){
     &>*{
@@ -130,6 +137,7 @@ export const GalCol2 = styled.div`
 }
 `
 export const GalCol3 = styled.div`&>*{
+    filter: brightness(70%);
     height: 400px;
     margin: auto;
     margin-top: 250px;
@@ -138,7 +146,8 @@ export const GalCol3 = styled.div`&>*{
     z-index:5;
 }
 &:hover>*{
-    opacity:.8; 
+    filter: brightness(100%);
+    transform:scale(1.1);
     transition: .5s ease;
  }
  @media screen and (max-width: 768px){
@@ -162,6 +171,7 @@ export const GalCol3 = styled.div`&>*{
 }
 `
 export const GalCol4 = styled.div`&>*{
+    filter: brightness(70%);
     height: 400px;
     margin: auto;
     margin-top: 20px;
@@ -169,13 +179,11 @@ export const GalCol4 = styled.div`&>*{
     transform: rotate(10deg);
 }
 &:hover>* {
-    opacity:.2; 
+    filter: brightness(100%);
+    transform:scale(1.1);
     transition: .5s ease;
  }
-&:hover>* .overlay{
-    opacity:1; 
-    transition: .5s ease;
- }
+
  @media screen and (max-width: 768px){
     &>*{
         height: 350px;

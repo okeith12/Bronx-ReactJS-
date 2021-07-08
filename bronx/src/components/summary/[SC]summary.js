@@ -4,13 +4,13 @@ import {IoArrowForwardSharp } from "react-icons/io5";
 
 export const SummaryContainer= styled.div`
 color: #fff;
-margin-top: 3vmax;
+margin-top: 10vh;
 min-height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
 width: 100%;
-margin-bottom: 3vmax;
+margin-bottom:10vh;
 @media screen and (max-width: 768px){
     margin-top: 8vmax;
     margin-bottom: 5vmax;

@@ -3,7 +3,7 @@ import {StoryContainer,TextWrapper,StoryImage,StoryImgOverlay,StoryWrapper,Story
 
 
 
-const StorySection = ({hasImg,bgImg,isFirst,id,picBg,imgStart,storyTitle,storyDesc,darkTitle,darkDesc}) => {
+const StorySection = ({hasImg,bgImg,isFirst,id,picBg,imgStart,storyTitle,storyDesc,darkTitle,darkDesc,story}) => {
     return (
         <>
             <StoryContainer isFirst={isFirst} id={id} picBg={picBg} bgImg={bgImg}>
@@ -24,9 +24,10 @@ const StorySection = ({hasImg,bgImg,isFirst,id,picBg,imgStart,storyTitle,storyDe
                 </StoryImg>
                 
                     </StoryGrid>
+                   
                 </StoryWrapper>
                
-            
+               
             </StoryContainer>
             
 

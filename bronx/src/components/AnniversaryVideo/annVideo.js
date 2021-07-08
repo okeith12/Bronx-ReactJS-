@@ -1,17 +1,18 @@
 import styled from "styled-components";
-import { IoCaretForwardSharp } from "react-icons/io5";
+
 
 
 export const VideoSection = styled.section`
+margin-top: 10vh;
     height:100vh;
   padding: 4.5rem 0 2.5rem;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     padding: 7rem 0 2rem;
-
+    height:80vh;
   }
 `
 export const VideoTitle = styled.h1`
-font-size: var(--h2-font-size);
+font-size: var(--h1-font-size);
 color: var(--primary-color);
 text-align: center;
 text-transform: capitalize;
@@ -51,22 +52,11 @@ margin-bottom: var(--mb-2);
 `
 export const VideoContent = styled.div`
 position: relative;
+align-items:center;
+justify-content:center;
 `
 export const AnnVideo = styled.video`
 max-width: 100%;
 height: auto;
-`
-export const VideoButton = styled.button`
-position: absolute;
-right: 1rem;
-bottom: -1rem;
-padding: 1rem 1.5rem;
-border: none;
-cursor: pointer;
-font-family: var(--body-font);
-font-size: var(--normal-font-size);
-`
-export const VideoIcon = styled(IoCaretForwardSharp)`
 
-font-size: 1.2rem;
 `

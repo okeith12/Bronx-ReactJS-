@@ -15,7 +15,7 @@ const GallerySummary = () => {
                <GalCol4><img src={pic4} alt=""/></GalCol4> 
                <Overlay className="overlay"/>
             </GalImgWrap>
-            <GalBtn>View More<Arrow/></GalBtn>
+            <GalBtn to='/gallery'>View More<Arrow/></GalBtn>
         </GallerySumContainer>
     )
 }

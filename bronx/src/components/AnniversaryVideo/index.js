@@ -1,6 +1,6 @@
 import React from 'react'
-import video from '../../images/testvideo.mp4';
-import {VideoSection,VideoTitle,VideoContainer,VideoContent,VideoDesc,AnnVideo,VideoIcon,VideoButton} from './annVideo';
+import video from '../../images/1080p.mp4';
+import {VideoSection,VideoTitle,VideoContainer,VideoContent,VideoDesc,AnnVideo} from './annVideo';
 
 
     const AnniversaryVideo = () => {
@@ -11,19 +11,18 @@ import {VideoSection,VideoTitle,VideoContainer,VideoContent,VideoDesc,AnnVideo,V
     return (
         <>
             <VideoSection>
-                <VideoTitle></VideoTitle>
+                <VideoTitle>Life In Motion</VideoTitle>
             <VideoContainer>
                 <VideoDesc>
-                    fgdfgfg
+                    One Year Anniversary
                 </VideoDesc>
                 <VideoContent>
                 <AnnVideo 
                src={video} alt="VIDEO" 
+               pip={true}
+               width='960px'
                controls = {true}
                 type='video/mp4'/>
-                <VideoButton >
-                    <VideoIcon></VideoIcon>
-                </VideoButton>
                 </VideoContent>
             </VideoContainer>
             </VideoSection>

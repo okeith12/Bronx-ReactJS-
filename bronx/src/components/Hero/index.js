@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <HeroContainer>
             <HeroTitle>The Life of <ColoredWord>Bronx</ColoredWord></HeroTitle>
-            <ScrollDownBtn>Scroll Down</ScrollDownBtn>
+            {/* <ScrollDownBtn to='/about'>Scroll Down</ScrollDownBtn> */}
         </HeroContainer>
     )
 }

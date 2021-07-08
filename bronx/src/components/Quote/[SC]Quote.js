@@ -122,7 +122,7 @@ margin-top:10vmax;
 `
 
 export const QuoteText = styled.h1`
-font-size: 48px;
+font-size: 36px;
 font-family: Lora;
 line-height: 60px;
 text-align:center;

@@ -5,6 +5,8 @@ import  { storySectionOne, storySectionThree } from './Data';
 
 export const StoryContainer = styled.div`
 margin-top:${({isFirst}) => (isFirst ? '-80px' : '0')};
+margin-bottom: 10vh;
+
 ${({picBg}) => {
     if(picBg && storySectionOne.story !== 3){
         return `
@@ -41,33 +43,37 @@ margin-left:auto;
 padding: 0 24px;
 justify-content:center;
 `
+
 export const StoryGrid = styled.div`
     display:grid;
-    grid-auto-columns: minmax(auto,1fr);
     align-items:center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'img cont'` : `'cont img'`)};
-
-    @media screen and (max-width: 768px){
+    grid-template-columns: ${({picBg}) => (picBg ? '1fr' : '(2,1fr)')};
+    @media screen and (max-width: 500px){
     
         grid-template-areas: ${({imgStart}) => (imgStart ? `'cont' 'img'` : `'cont cont' 'img img' `)};
+        
     }
+    
 `
 export const StoryData = styled.div`
 margin-bottom: 15px;
 padding: 0 15px;
 grid-area: cont;
-
+align-items: center;
 `
 export const TextWrapper = styled.div`
 max-width:540px;
 padding-top: 0;
 padding-bottom: 60px;
+margin-top:${({isFirst}) => (isFirst? '0' : '200px')};
+
 `
 export const StoryTitle = styled.h1`
 margin-bottom: 24px;
 font-size: var(--h1-font-size);
 line-height:1.1;
-color:${({darkTitle}) => (darkTitle ? 'red' : 'black')};
+color:${({darkTitle}) => (darkTitle ? 'var(--light-color)' : 'var(--primary-color)')};
 text-align: center;
 text-transform: capitalize;
 
@@ -78,7 +84,7 @@ margin-bottom: 35px;
 max-width:440px;
 font-size: var(--h3-font-size);
 line-height:24px;
-color:${({darkDesc}) => (darkDesc ? 'var(--light-color)' : 'black')};
+color:${({darkDesc}) => (darkDesc ? 'var(--light-color)' : 'var(--accent-color)')};
 
 `
 export const StoryImg= styled.div`
@@ -95,9 +101,20 @@ max-width: 555px;
 height:100%;
 `
 export const StoryImage = styled.img`
-width:300px;
+width:90%;
 margin 0 0 10px 0;
 padding-right: 0;
+align-items:center;
+&:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in;
+}
+@media screen and (max-width:768px){
+    
+}
+@media screen and (max-width:500px){
+    width:80%; 
+}
 `
 
 

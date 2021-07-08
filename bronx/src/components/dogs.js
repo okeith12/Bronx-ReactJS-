@@ -1,107 +1,135 @@
 import React from 'react'
 import styled from 'styled-components'
-import hero01 from '../images/bronx_gal_27.jpg';
+import abt01 from '../images/bambina_about.jpg';
+import abt02 from '../images/bruno_about.jpg';
+import abt03 from '../images/thor_about.jpg';
 
 
-const DogSectionTitle = styled.h1`
-
-  `
-const DogContainer = styled.div`
-height: 80vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items:center;
-background: #010606;
-`
-const DogWrapper = styled.div`
-    max-width:300px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    align-items: center;
-    grid-gap:16px;
-    padding: 0 50px;
-
-    @media screen and (max-width: 1000px){
-        grid-template-columns: 1fr 1fr;
-    }
-    @media screen and (max-width: 768px){
-        grid-template-columns: 1fr;
-        padding: 0 20px;
-    }
-`
-const DogCard = styled.div`
-background: #ffff;
-display: flex;
-flex-direction: flex-start;
-align-items:center;
-border-radius: 10px;
-max-height: 500px;
-padding: 30px;
-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-transition: all 0.2s ease-in-out;
-`
-const DogImage = styled.img`
-transition: .3s ease in;
-max-width: 300px;
-height: 450px;
-&:hover{
-    transform: scale(1.1);
-}
-
-
-`
-const DogData = styled.div`
-position: absolute;
-    top: 350px;
-    left: 40px;
-
-`
-const DogDataTitle = styled.h1`
-
-`
-const DogDesc = styled.p`
-
-`
-
-
-
-const DogSection = () => {
+const DogSection = ({img,alt,name}) => {
     return (
         <>
-            <DogContainer>
-                <DogSectionTitle>
-                    DOGS LIVING LARGE
-                </DogSectionTitle>
-                <DogWrapper>
-                    
-                        <DogCard>
-                            <DogImage src={hero01} alt=''></DogImage>
-                            <DogData>
-                                <DogDataTitle>DOGS</DogDataTitle>
-                                <DogDesc>Dogs are lvnig alrge</DogDesc>
-                            </DogData>
-                        </DogCard>
-                        <DogCard>
-                            <DogImage src={hero01} alt=''></DogImage>
-                            <DogData>
-                                <DogDataTitle>SDA</DogDataTitle>
-                                <DogDesc>fdsfgdfgdgfgf</DogDesc>
-                            </DogData>
-                        </DogCard>
-                        <DogCard>
-                            <DogImage src={hero01} alt=''></DogImage>
-                            <DogData>
-                                <DogDataTitle>dfg</DogDataTitle>
-                                <DogDesc>fdgdfgdfgfgfdg</DogDesc>
-                            </DogData>
-                        </DogCard>
-                        </DogWrapper>
-               
-            </DogContainer>
+            <SectionDog>
+                <DogSectionTitle>Legends never die</DogSectionTitle>
+                <DogSectionTitle>..They Live through Us</DogSectionTitle>
+                <DogContainer>
+                    <DogCard>
+                        <DogImage src={abt01}>
+                        </DogImage>
+                        <DogData>   <DogDataTitle>BAMBINA</DogDataTitle>
+                    <DogDesc>SHE GAINED YOUR HEARt</DogDesc></DogData>
+                    </DogCard>
+                    <DogCard>
+                        <DogImage src={abt02}>
+                        </DogImage>
+                        <DogData>   <DogDataTitle>BRUNO</DogDataTitle>
+                    <DogDesc>He GAINED YOUR SMILE</DogDesc></DogData>
+                    </DogCard>
+                    <DogCard>
+                        <DogImage src={abt03}>
+                        </DogImage>
+                        <DogData>   <DogDataTitle>THOR</DogDataTitle>
+                    <DogDesc>HE GAINED YOUR SOUL</DogDesc></DogData>
+                    </DogCard>
+                </DogContainer>
+            </SectionDog>
         </>
     )
 }
 
 export default DogSection
+
+const SectionDog = styled.section`
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  @media (max-width: 800px){
+    height: 100%;
+  }
+`
+const DogSectionTitle = styled.h1`
+    font-size: var(--h1-font-size);
+    margin-bottom: 1rem;
+  text-align: center;
+  color: var(--primary-color);
+  `
+const DogContainer = styled.div`
+display: flex;
+justify-content: center;
+overflow: visible;
+width: 90%;
+@media (max-width: 800px){
+    flex-wrap: wrap;
+  }
+  @media (max-width: 500px){
+    width: 100%;
+  }
+`
+const DogWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items:center;
+    padding: 0 2rem;
+
+    @media screen and (max-width: 1200px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 868px){
+        grid-template-columns: 1fr;
+    }
+`
+const DogCard = styled.div`
+margin: 1rem;
+  height: 450px;
+  width: 300px;
+  border-radius: 4px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    );
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  @media (max-width: 500px){
+    max-width: 100%;
+    width: 50vh;
+    min-height: auto;
+    background-position: center;
+  }
+`
+const DogImage = styled.img`
+height: 100%;
+max-width:100%;
+position: absolute;
+border-radius:10px;
+filter: brightness(70%);
+transition: 0.4s cubic-bezier(0.075,0.82,0.165,1);
+&:hover{
+    transform: scale(1.1);
+}
+
+`
+const DogData = styled.div`
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+padding 0 2rem;
+`
+const DogDataTitle = styled.h1`
+position: absolute;
+top: 350px;
+left: 40px;
+color: var(--light-color);
+letter-spacing: 2px;
+`
+const DogDesc = styled.p`
+position: absolute;
+  top: 400px;
+  left: 40px;
+  text-align:center;
+  color: var(--light-color);
+`
