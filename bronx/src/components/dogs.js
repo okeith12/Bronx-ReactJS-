@@ -44,7 +44,7 @@ display: flex;
   align-items: center;
   height: 80vh;
   margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-bottom: 20vh;
   @media (max-width: 800px){
     height: 100%;
   }
@@ -87,6 +87,8 @@ margin: 1rem;
   width: 300px;
   border-radius: 4px;
   position: relative;
+  justify-content: center;
+align-items:center;
   @media (max-width: 500px){
     max-width: 100%;
     width: 50vh;
@@ -104,7 +106,8 @@ transition: 0.4s cubic-bezier(0.075,0.82,0.165,1);
 &:hover{
     transform: scale(1.1);
 }
-
+justify-content: center;
+align-items:center;
 `
 const DogData = styled.div`
 display:flex;

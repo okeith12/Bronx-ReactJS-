@@ -7,7 +7,7 @@ const StorySection = ({hasImg,bgImg,isFirst,id,picBg,imgStart,storyTitle,storyDe
     return (
         <>
             <StoryContainer isFirst={isFirst} id={id} picBg={picBg} bgImg={bgImg}>
-                <StoryWrapper >
+                z<StoryWrapper >
                     <StoryGrid imgStart={imgStart} hasImg={hasImg}>
                         <StoryData>
                             <TextWrapper>
