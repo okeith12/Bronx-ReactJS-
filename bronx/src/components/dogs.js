@@ -86,13 +86,6 @@ margin: 1rem;
   height: 450px;
   width: 300px;
   border-radius: 4px;
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, 0.6) 100%
-    );
-  background-size: cover;
-  background-position: center;
   position: relative;
   @media (max-width: 500px){
     max-width: 100%;
